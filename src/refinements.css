@@ -1,0 +1,157 @@
+/* Final viewport and compact-instrument refinements, after browser inspection. */
+.quick-treatment {
+  padding: 6px 12px 13px;
+  flex-shrink: 0;
+}
+.quick-treatment .add-treatment {
+  margin-top: 0;
+}
+.viewport {
+  background: radial-gradient(
+    ellipse at 49% 48%,
+    #2a3630,
+    #1e2923 55%,
+    #18211c 100%
+  );
+}
+.scene-summary {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.layer-section {
+  margin-top: 12px;
+}
+.layer-row {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 35px;
+}
+.treatments-section {
+  padding-top: 12px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+.sidebar-hint {
+  display: none;
+}
+.plan-svg.mini {
+  height: 109px;
+}
+.mini-plan-section {
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+.scene-summary .scene-thumb {
+  height: 34px;
+}
+.fixed-calibrate {
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.rt-card {
+  margin-top: 20px;
+}
+.decay-chart {
+  height: 120px;
+  margin-top: 8px;
+}
+.acoustic-metrics {
+  margin-top: 18px;
+}
+.acoustic-metrics > div {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.reflection-settings {
+  margin-top: 10px;
+  padding-top: 11px;
+}
+.insight-card {
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+.viewport-caption {
+  padding: 8px 11px 10px;
+  top: 70px;
+  left: 15px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #18221cdd, #18221c88 75%, transparent);
+}
+.viewport-caption h2 {
+  color: #cbd8c2;
+}
+.viewport-caption .eyebrow {
+  color: #9baf8d;
+}
+.is-walking ~ .room-dimensions {
+  display: none;
+}
+.is-walking ~ .path-legend {
+  padding: 7px 9px;
+  background: #18221ccc;
+  border-radius: 4px;
+}
+.viewport-bottom {
+  background: #172019dc;
+}
+.viewport-bottom > span {
+  color: #a7b79b;
+}
+.path-legend i.first {
+  background: #78efc6;
+}
+.viewport-add-menu {
+  right: 39px;
+  top: 0;
+  min-width: 175px;
+}
+.viewport-add-menu button {
+  font-size: 10px;
+}
+.tools-add-wrap {
+  position: relative;
+}
+.tools-add-wrap > .icon-button {
+  display: flex;
+}
+.viewport-tools {
+  z-index: 5;
+}
+@media (min-width: 1650px) {
+  .plan-svg.mini {
+    height: 140px;
+  }
+  .decay-chart {
+    height: 147px;
+  }
+  .layer-row {
+    min-height: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .viewport-caption {
+    top: 65px;
+    left: 7px;
+    max-width: calc(100% - 60px);
+  }
+  .viewport-caption h2 {
+    font-size: 11px;
+  }
+  .decay-chart {
+    height: 180px;
+  }
+  .fixed-calibrate {
+    margin: 0 20px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+  .insight-card {
+    margin-bottom: 20px;
+  }
+  .layer-row {
+    min-height: 38px;
+  }
+}
