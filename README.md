@@ -2,6 +2,16 @@
 
 A local acoustic sketchbook: trace a real room, explore it in 2D and 3D, move a sound source and listener, and compare acoustic treatments through headphones.
 
+## A look inside
+
+![Echo Cartographer’s furnished 3D demo room, with luminous sound paths, a synchronized floor plan, and the acoustic response inspector.](docs/screenshots/room-overview.png)
+
+Explore the furnished demo in 3D, move the speaker and listener, and see direct sound and early reflections update alongside the predicted room response.
+
+![The same room in 2D plan view with wall treatment highlighted, Original and Treated comparison controls, and a reduced predicted decay curve.](docs/screenshots/treatment-plan.png)
+
+Plan a wall treatment and compare its predicted effect across frequency bands. The A/B controls switch both the acoustic visualization and headphone audio. These demo results are illustrative, not measurements.
+
 ## Run locally
 
 Use Node **22.12+** (Node 24 recommended).
@@ -58,6 +68,8 @@ npm run test:e2e         # Chrome interactions, audio, persistence, import, mic,
 ```
 
 The browser suite uses installed Google Chrome with synthetic microphone input. It starts/reuses local servers on 5173 and 4173; run the build first. Screenshots are written to `artifacts/`, with failure traces in `test-results/`.
+
+To refresh the README screenshots with the production preview running on port 4173, use `node scripts/capture-readme.mjs`. It captures the deterministic demo routes into `docs/screenshots/` without changing your saved workspace. Set `ECHO_SCREENSHOT_URL` to capture another local server.
 
 ## Scope
 
